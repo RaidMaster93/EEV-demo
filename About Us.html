@@ -1,124 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Us | Your Company Name</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - EEV Transport</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet">
   <style>
-    /* ---------- RESET ---------- */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Poppins", sans-serif;
-    }
+    body {font-family: Arial, sans-serif;}
+    .header {display:flex;justify-content:space-between;align-items:center;padding:15px;background:#e0e0ff;flex-wrap:wrap;}
+    .logo {display:flex;align-items:center;gap:10px;}
+    .logo-img {height:60px;}
+    .nav-links {list-style:none;display:flex;gap:20px;}
+    .nav-links a {text-decoration:none;color:#f00505;font-weight:bold;}
+    .hamburger {display:none;}
 
-    body {
-      background-color: #f5f7fa;
-      color: #333;
-      line-height: 1.6;
-    }
+    .main {padding:40px 20px;}
+    .about-hero p {max-width:800px;margin:auto;font-size:18px;line-height:1.7;}
 
-    /* ---------- SECTION ---------- */
-    .about-section {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-      padding: 60px 10%;
-      background-color: #fff;
-    }
+    .about-section {display:flex;justify-content:center;flex-wrap:wrap;gap:30px;padding-top:40px;}
+    .about-card {background:#FFCA20;padding:25px;border-radius:15px;width:300px;text-align:center;font-weight:bold;transition:0.3s;}
+    .about-card:hover {transform:scale(1.05);}    
 
-    .about-content {
-      flex: 1 1 500px;
-      padding: 20px;
-    }
+    .team-section {padding-top:50px;text-align:center;}
+    .team-cards {display:flex;flex-wrap:wrap;justify-content:center;gap:30px;}
+    .team-card {width:250px;}
+    .team-card img {width:100%;height:250px;border-radius:15px;object-fit:cover;}
 
-    .about-content h1 {
-      font-size: 2.5rem;
-      color: #0b2545;
-      margin-bottom: 20px;
-      font-weight: 700;
-      position: relative;
-    }
+    .foot {background:#413d3d;color:white;padding:30px;text-align:center;}
+    .ful {list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:15px;margin-bottom:20px;}
+    .ful a {color:#FFCA20;text-decoration:none;}
 
-    .about-content h1::after {
-      content: "";
-      display: block;
-      width: 80px;
-      height: 4px;
-      background-color: #0078ff;
-      margin-top: 10px;
-      border-radius: 2px;
-    }
-
-    .about-content p {
-      color: #555;
-      margin-bottom: 20px;
-      font-size: 1rem;
-    }
-
-    .about-content .mission {
-      font-weight: 600;
-      color: #0078ff;
-    }
-
-    .about-image {
-      flex: 1 1 400px;
-      text-align: center;
-      padding: 20px;
-    }
-
-    .about-image img {
-      width: 100%;
-      max-width: 400px;
-      border-radius: 10px;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-    }
-
-    /* ---------- BUTTON ---------- */
-    .btn {
-      display: inline-block;
-      padding: 10px 25px;
-      background: #0078ff;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: 500;
-      transition: background 0.3s ease;
-    }
-
-    .btn:hover {
-      background: #005fcc;
-    }
-
-    /* ---------- RESPONSIVE ---------- */
-    @media (max-width: 768px) {
-      .about-section {
-        flex-direction: column-reverse;
-        text-align: center;
-      }
-      .about-content h1::after {
-        margin: 10px auto;
-      }
+    @media(max-width:768px){
+      .nav-links {display:none;flex-direction:column;width:100%;text-align:center;}
+      .nav-links.active {display:flex;}
+      .hamburger {display:block;font-size:28px;cursor:pointer;}
+      .about-card,.team-card {width:90%;}
     }
   </style>
 </head>
 <body>
-
-  <section class="about-section">
-    <div class="about-content">
-      <h1>About Us</h1>
-      <p>Welcome to <strong>EEV</strong>— redefining the way the world moves.<br> We’re a next-generation transportation network company dedicated to making travel simpler, smarter, and safer for everyone.</p>
-      <p>Our <span class="mission">mission</span> is to combine technology, creativity, and strategy to deliver innovative solutions tailored to each client’s unique goals.</p>
-      <p>With a dedicated team of developers, designers, and strategists, we take pride in maintaining long-term relationships built on trust, transparency, and results.</p>
-      <a href="index.html" class="btn">Go to Home</a>
+  <header class="header">
+    <div class="logo">
+      <img src="EEVbg.png" alt="EEV Logo" class="logo-img">
+      <h1>EEV Transport</h1>
     </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="About Us.html" class="active">ABOUT US</a></li>
+        <li><a href="#">SERVICES</a></li>
+        <li><a href="privacy.html">PRIVACY POLICY</a></li>
+      </ul>
+      <div class="hamburger"><i class="fas fa-bars"></i></div>
+    </nav>
+  </header>
 
-    <!-- <div class="about-image">
-      <img src="https://via.placeholder.com/400x400" alt="Team Image">
-    </div> -->
-  </section>
+  <main class="main">
+    <section class="about-hero">
+      <h2 style="text-align:center;font-size:36px;margin-bottom:20px;">About EEV Transport</h2>
+      <p>EEV Transport is a cutting-edge transportation platform that brings convenience, safety, and efficiency to your everyday commute. We are committed to creating a sustainable, transparent, and user‑friendly experience for both riders and drivers.</p>
+    </section>
 
+    <section class="about-section">
+      <div class="about-card">
+        <i class="fas fa-bullseye" style="font-size:50px;color:#000;"></i>
+        <h3>Our Mission</h3>
+        <p>To provide eco‑friendly, safe, and affordable transport solutions while leveraging technology to optimize every ride.</p>
+      </div>
+      <div class="about-card">
+        <i class="fas fa-eye" style="font-size:50px;color:#000;"></i>
+        <h3>Our Vision</h3>
+        <p>To build a transparent and trustworthy transportation ecosystem that benefits both customers and drivers.</p>
+      </div>
+      <div class="about-card">
+        <i class="fas fa-heart" style="font-size:50px;color:#000;"></i>
+        <h3>Our Values</h3>
+        <p>Safety, reliability, innovation, sustainability, and customer satisfaction drive everything we do.</p>
+      </div>
+    </section>
+
+    <section class="team-section">
+      <h2 style="font-size:32px;margin-bottom:30px;">Meet Our Team</h2>
+      <div class="team-cards">
+        <div class="team-card">
+          <img src="team1.jpeg" alt="Team Member 1">
+          <h4>Rupesh Soni</h4>
+          <!-- <p>Founder & CEO</p> -->
+        </div>
+        <div class="team-card">
+          <img src="team2.jpeg" alt="Team Member 2">
+          <h4>Nitin Singh</h4>
+          <!-- <p>CTO</p> -->
+        </div>
+        <div class="team-card">
+          <img src="team3.jpeg" alt="Team Member 3">
+          <h4>Sameer Patel</h4>
+          <!-- <p>Head of Operations</p> -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <ul class="ful">
+      <li><a href="#">CAREERS</a></li>
+      <li><a href="safetypage.html">SAFETY</a></li>
+      <li><a href="Contact Us.html">CONTACT US</a></li>
+      <li><a href="privacy.html">PRIVACY POLICY</a></li>
+      <li><a href="#">BLOG</a></li>
+      <li><a href="captainterms.html">CAPTAIN TERMS</a></li>
+      <li><a href="#">CUSTOMER TERMS</a></li>
+    </ul>
+    <div class="copy">&copy; EEV TRANSPORT. ALL RIGHTS RESERVED.</div>
+    <div class="made"><i class="fas fa-heart"></i> Made With Love In Lucknow</div>
+  </footer>
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click',()=>{
+      navLinks.classList.toggle('active');
+    })
+  </script>
 </body>
 </html>
