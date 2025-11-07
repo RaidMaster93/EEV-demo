@@ -1,125 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home Page</title>
-  <link rel="icon" href="EEVf.jpeg" type="image/x-icon" />
-  <link rel="stylesheet" href="style.css" />
-  <link
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    rel="stylesheet"
-  />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EEV Transport</title>
+  <link rel="icon" href="EEVf.jpeg" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet">
 </head>
-
 <body>
+  <!-- HEADER -->
   <header class="header">
-    <img src="EEVbg.png" alt="EEV Image" class="hero-image" />
-    <h3 class="tagline">Here Conveyance meets the Convenience</h3>
-    <nav class="nav">
-      <ul class="ul">
+    <div class="logo">
+      <img src="EEVbg.png" alt="EEV Logo" class="logo-img">
+      <h1>EEV Transport</h1>
+    </div>
+    <nav>
+      <ul class="nav-links">
         <li><a href="#">HOME</a></li>
         <li><a href="About Us.html">ABOUT US</a></li>
         <li><a href="#">SERVICES</a></li>
       </ul>
+      <div class="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
     </nav>
   </header>
 
-  <div class="main">
-    <div class="search">
-      <div class="both">
-        <form action="#">
-          <div class="pickup">
-            <i class="fa-solid fa-location-dot"></i>
-            <input type="text" placeholder="Enter Pickup Location" required />
-          </div>
-          <div class="destination">
-            <i class="fa-solid fa-location-dot"></i>
-            <input type="text" placeholder="Enter Drop Location" required />
-          </div>
-        </form>
-        <form action="newpage.html" target="_blank">
-          <button class="btn">Book Ride</button>
-        </form>
+  <!-- HERO / SEARCH SECTION -->
+  <section class="hero">
+    <div class="search-box">
+      <div class="input-group">
+        <div class="pickup">
+          <i class="fa-solid fa-location-dot"></i>
+          <input type="text" placeholder="Enter Pickup Location" required>
+        </div>
+        <div class="destination">
+          <i class="fa-solid fa-location-dot"></i>
+          <input type="text" placeholder="Enter Drop Location" required>
+        </div>
+        <button class="btn">Book Ride</button>
       </div>
     </div>
+  </section>
 
-    <div class="ridetimeouter">
-      <div class="ridetimeimage">
-        <img src="ridetimeimage1.jpeg" alt="" />
-        <img src="ridetimeimage2.jpeg" alt="" />
-        <img src="ridetimeimage3.jpeg" alt="" />
-        <img src="ridetimeimage4.jpeg" alt="" />
-      </div>
-
-      <div class="ridetime">
-        <h1>EEV</h1>
-        <hr />
-        <ul>
-          <li>&star; Eco-Friendly and cost Effective Transport.</li>
-          <li>&star; Real Time Vehicle and Route Tracking.</li>
-          <li>&star; Smart Ride Matching and Route Optimization.</li>
-          <li>&star; Booking Route, and Seat Information in one Website.</li>
-          <li>&star; Secure and Transparent Ride and Driver Records.</li>
-        </ul>
-      </div>
+  <!-- RIDETIME SECTION -->
+  <section class="ridetimeouter">
+    <div class="ridetimeimages">
+      <img src="ridetimeimage1.jpeg" alt="Ride Image 1">
+      <img src="ridetimeimage2.jpeg" alt="Ride Image 2">
+      <img src="ridetimeimage3.jpeg" alt="Ride Image 3">
+      <img src="ridetimeimage4.jpeg" alt="Ride Image 4">
     </div>
-
-    <div class="visionouter">
-      <h1>Our Vision</h1>
-      <hr />
-      <h3>A Platform That:</h3>
-
-      <div class="vision-grid">
-        <div>Creates a fair Ecosystem For Both Drivers as well as Customers</div>
-        <div>Ensures Safety, Transparency, and Trust in Every Ride</div>
-        <div>Makes Public Transportation Affordable & Reliable</div>
-        <div>Builds a Future-Ready Model to Compete with Giants in the Sector</div>
-      </div>
+    <div class="ridetimeinfo">
+      <h2>EEV Features</h2>
+      <ul>
+        <li>⭐ Eco-Friendly and Cost-Effective Transport</li>
+        <li>⭐ Real-Time Vehicle & Route Tracking</li>
+        <li>⭐ Smart Ride Matching & Route Optimization</li>
+        <li>⭐ Booking Route & Seat Info in One Website</li>
+        <li>⭐ Secure & Transparent Ride & Driver Records</li>
+      </ul>
     </div>
+  </section>
 
-    <div class="safetyouter">
-      <div class="Safety">
-        <h1>Safety For All</h1>
-        <hr />
-        <p>
-          Your safety is our first priority. EEV offers dashcams which ensures the safety for our customers as well as our drivers.
-          We are dedicated to making every ride Safe and Comfortable.
-        </p>
-        <p class="knowmore">
-          <a href="safetypage.html" target="_blank">KNOW MORE...</a>
-        </p>
-      </div>
-
-      <div class="safetyimages">
-        <img src="safety.jpeg" alt="Safety" />
-      </div>
+  <!-- VISION SECTION -->
+  <section class="visionouter">
+    <h2>Our Vision</h2>
+    <div class="vision-grid">
+      <div class="vision-card">Creates a fair ecosystem for drivers & customers</div>
+      <div class="vision-card">Ensures safety, transparency & trust in every ride</div>
+      <div class="vision-card">Makes public transport affordable & reliable</div>
+      <div class="vision-card">Builds a future-ready model to compete with giants</div>
     </div>
+  </section>
 
-    <hr />
-    <div class="social">
-      <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-      <a href="https://www.x.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-      <a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+  <!-- SAFETY SECTION -->
+  <section class="safetyouter">
+    <div class="safety-info">
+      <h2>Safety For All</h2>
+      <p>Your safety is our top priority. EEV offers dashcams ensuring safe rides for both customers & drivers.</p>
+      <a href="safetypage.html" class="btn-knowmore">KNOW MORE...</a>
     </div>
+    <div class="safety-image">
+      <img src="safety.jpeg" alt="Safety">
+    </div>
+  </section>
 
-    <footer class="foot">
-      <nav class="fnav">
-        <ul class="ful">
-          <li><a href="#">CAREERS</a></li>
-          <li><a href="safetypage.html" target="_blank">SAFETY</a></li>
-          <li><a href="Contact Us.html">CONTACT&nbsp;US</a></li>
-          <li><a href="#">PRIVACY POLICY</a></li>
-          <li><a href="#">BLOG</a></li>
-          <li><a href="captainterms.html" target="_blank">CAPTAIN TERMS : E-VEHICLE</a></li>
-          <li><a href="#">CUSTOMER TERMS : E-VEHICLE</a></li>
-        </ul>
-      </nav>
-      <div class="copy">&copy; EEV TRANSPORT. ALL RIGHTS RESERVED.</div>
-      <div class="made">
-        <i class="fa-solid fa-heart"></i> Made With Love In Lucknow...
-      </div>
-    </footer>
-  </div>
+  <!-- SOCIAL -->
+  <section class="social">
+    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.x.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
+    <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="foot">
+    <ul class="ful">
+      <li><a href="#">CAREERS</a></li>
+      <li><a href="safetypage.html">SAFETY</a></li>
+      <li><a href="Contact Us.html">CONTACT US</a></li>
+      <li><a href="#">PRIVACY POLICY</a></li>
+      <li><a href="#">BLOG</a></li>
+      <li><a href="captainterms.html">CAPTAIN TERMS</a></li>
+      <li><a href="#">CUSTOMER TERMS</a></li>
+    </ul>
+    <div class="copy">&copy; EEV TRANSPORT. ALL RIGHTS RESERVED.</div>
+    <div class="made"><i class="fas fa-heart"></i> Made With Love In Lucknow</div>
+  </footer>
+
+  <!-- HAMBURGER MENU SCRIPT -->
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
